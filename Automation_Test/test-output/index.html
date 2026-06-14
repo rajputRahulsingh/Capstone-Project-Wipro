@@ -1,0 +1,1351 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AutomationSuite" class="navigator-link">
+              <span class="suite-name border-failed">AutomationSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AutomationSuite" class="navigator-link ">
+                    <span>C:\Users\ashus\Desktop\wipro_Sdet\Automation_Test\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AutomationSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AutomationSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AutomationSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AutomationSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AutomationSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AutomationSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">35 methods, 1 failed,   34 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AutomationSuite" class="hide-methods failed suite-AutomationSuite"> (hide)</a> <!-- hide-methods failed suite-AutomationSuite -->
+                      <a href="#" panel-name="suite-AutomationSuite" class="show-methods failed suite-AutomationSuite"> (show)</a> <!-- show-methods failed suite-AutomationSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-AutomationSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.SectionFormTest" class="method navigator-link" hash-for-method="verifySectionForm(1, Aman)">verifySectionForm(1, Aman)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AutomationSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-AutomationSuite" class="hide-methods passed suite-AutomationSuite"> (hide)</a> <!-- hide-methods passed suite-AutomationSuite -->
+                      <a href="#" panel-name="suite-AutomationSuite" class="show-methods passed suite-AutomationSuite"> (show)</a> <!-- show-methods passed suite-AutomationSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-AutomationSuite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.ShadowDOMTest" class="method navigator-link" hash-for-method="clickBlogLinkTest">clickBlogLinkTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.ShadowDOMTest" class="method navigator-link" hash-for-method="shadowCheckboxTest">shadowCheckboxTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.ShadowDOMTest" class="method navigator-link" hash-for-method="shadowFileUploadTest">shadowFileUploadTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.ShadowDOMTest" class="method navigator-link" hash-for-method="shadowTextBoxTest">shadowTextBoxTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.LinksTest" class="method navigator-link" hash-for-method="verifyAppleLink">verifyAppleLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.FormTest" class="method navigator-link" hash-for-method="verifyColorSelection">verifyColorSelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.AlertTest" class="method navigator-link" hash-for-method="verifyConfirmationAlert">verifyConfirmationAlert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.FormTest" class="method navigator-link" hash-for-method="verifyCountrySelection">verifyCountrySelection</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.FormTest" class="method navigator-link" hash-for-method="verifyDatePicker1">verifyDatePicker1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.FormTest" class="method navigator-link" hash-for-method="verifyDatePicker2">verifyDatePicker2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.FormTest" class="method navigator-link" hash-for-method="verifyDateRange">verifyDateRange</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.LinksTest" class="method navigator-link" hash-for-method="verifyDellLink">verifyDellLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.MouseActionsTest" class="method navigator-link" hash-for-method="verifyDoubleClick">verifyDoubleClick</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.MouseActionsTest" class="method navigator-link" hash-for-method="verifyDragAndDrop">verifyDragAndDrop</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.DynamicButtonTest" class="method navigator-link" hash-for-method="verifyDynamicButton">verifyDynamicButton</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.TableTest" class="method navigator-link" hash-for-method="verifyDynamicTable">verifyDynamicTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.FormTest" class="method navigator-link" hash-for-method="verifyForm(Rahul, rahul@test.com, 9.999999999E9, Delhi)">verifyForm(Rahul, rahul@test.com, 9.999999999E9, Delhi)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.FormTest" class="method navigator-link" hash-for-method="verifyForm(Aman, aman@test.com, 8.888888888E9, Mumbai)">verifyForm(Aman, aman@test.com, 8.888888888E9, Mumbai)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.HomePageTest" class="method navigator-link" hash-for-method="verifyHomePage">verifyHomePage</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.LinksTest" class="method navigator-link" hash-for-method="verifyLenovoLink">verifyLenovoLink</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.MouseActionsTest" class="method navigator-link" hash-for-method="verifyMouseHover">verifyMouseHover</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.UploadTest" class="method navigator-link" hash-for-method="verifyMultipleFileUpload">verifyMultipleFileUpload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.WindowHandlingTest" class="method navigator-link" hash-for-method="verifyNewTab">verifyNewTab</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.TableTest" class="method navigator-link" hash-for-method="verifyPaginationTable">verifyPaginationTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.WindowHandlingTest" class="method navigator-link" hash-for-method="verifyPopupWindow">verifyPopupWindow</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.AlertTest" class="method navigator-link" hash-for-method="verifyPromptAlert">verifyPromptAlert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.MouseActionsTest" class="method navigator-link" hash-for-method="verifyScrollingDropdown">verifyScrollingDropdown</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.SectionFormTest" class="method navigator-link" hash-for-method="verifySectionForm(0, Rahul)">verifySectionForm(0, Rahul)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.SectionFormTest" class="method navigator-link" hash-for-method="verifySectionForm(2, Karan)">verifySectionForm(2, Karan)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.AlertTest" class="method navigator-link" hash-for-method="verifySimpleAlert">verifySimpleAlert</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.UploadTest" class="method navigator-link" hash-for-method="verifySingleFileUpload">verifySingleFileUpload</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.MouseActionsTest" class="method navigator-link" hash-for-method="verifySlider">verifySlider</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.TableTest" class="method navigator-link" hash-for-method="verifyStaticTable">verifyStaticTable</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AutomationSuite" title="tests.WindowHandlingTest" class="method navigator-link" hash-for-method="verifyWikipediaSearch">verifyWikipediaSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-AutomationSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AutomationSuite" class="panel AutomationSuite">
+          <div class="suite-AutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.SectionFormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySectionForm(1, Aman)">
+                  </a> <!-- verifySectionForm(1, Aman) -->
+                  <span class="method-name">verifySectionForm</span>
+                  <span class="parameters">(1,Aman)</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index 1 out of bounds for length 0
+	at java.base/jdk.internal.util.Preconditions.outOfBounds(Preconditions.java:100)
+	at java.base/jdk.internal.util.Preconditions.outOfBoundsCheckIndex(Preconditions.java:106)
+	at java.base/jdk.internal.util.Preconditions.checkIndex(Preconditions.java:302)
+	at java.base/java.util.Objects.checkIndex(Objects.java:385)
+	at java.base/java.util.ArrayList.get(ArrayList.java:427)
+	at tests.SectionFormTest.verifySectionForm(SectionFormTest.java:32)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-failed -->
+          <div class="suite-AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.HomePageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyHomePage">
+                  </a> <!-- verifyHomePage -->
+                  <span class="method-name">verifyHomePage</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-passed -->
+          <div class="suite-AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.ShadowDOMTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="clickBlogLinkTest">
+                  </a> <!-- clickBlogLinkTest -->
+                  <span class="method-name">clickBlogLinkTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shadowCheckboxTest">
+                  </a> <!-- shadowCheckboxTest -->
+                  <span class="method-name">shadowCheckboxTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shadowFileUploadTest">
+                  </a> <!-- shadowFileUploadTest -->
+                  <span class="method-name">shadowFileUploadTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="shadowTextBoxTest">
+                  </a> <!-- shadowTextBoxTest -->
+                  <span class="method-name">shadowTextBoxTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-passed -->
+          <div class="suite-AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SectionFormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySectionForm(0, Rahul)">
+                  </a> <!-- verifySectionForm(0, Rahul) -->
+                  <span class="method-name">verifySectionForm</span>
+                  <span class="parameters">(0,Rahul)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySectionForm(2, Karan)">
+                  </a> <!-- verifySectionForm(2, Karan) -->
+                  <span class="method-name">verifySectionForm</span>
+                  <span class="parameters">(2,Karan)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-passed -->
+          <div class="suite-AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.DynamicButtonTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDynamicButton">
+                  </a> <!-- verifyDynamicButton -->
+                  <span class="method-name">verifyDynamicButton</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-passed -->
+          <div class="suite-AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.AlertTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyConfirmationAlert">
+                  </a> <!-- verifyConfirmationAlert -->
+                  <span class="method-name">verifyConfirmationAlert</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPromptAlert">
+                  </a> <!-- verifyPromptAlert -->
+                  <span class="method-name">verifyPromptAlert</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySimpleAlert">
+                  </a> <!-- verifySimpleAlert -->
+                  <span class="method-name">verifySimpleAlert</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-passed -->
+          <div class="suite-AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.MouseActionsTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDoubleClick">
+                  </a> <!-- verifyDoubleClick -->
+                  <span class="method-name">verifyDoubleClick</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDragAndDrop">
+                  </a> <!-- verifyDragAndDrop -->
+                  <span class="method-name">verifyDragAndDrop</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMouseHover">
+                  </a> <!-- verifyMouseHover -->
+                  <span class="method-name">verifyMouseHover</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyScrollingDropdown">
+                  </a> <!-- verifyScrollingDropdown -->
+                  <span class="method-name">verifyScrollingDropdown</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySlider">
+                  </a> <!-- verifySlider -->
+                  <span class="method-name">verifySlider</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-passed -->
+          <div class="suite-AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.LinksTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyAppleLink">
+                  </a> <!-- verifyAppleLink -->
+                  <span class="method-name">verifyAppleLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDellLink">
+                  </a> <!-- verifyDellLink -->
+                  <span class="method-name">verifyDellLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyLenovoLink">
+                  </a> <!-- verifyLenovoLink -->
+                  <span class="method-name">verifyLenovoLink</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-passed -->
+          <div class="suite-AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.TableTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDynamicTable">
+                  </a> <!-- verifyDynamicTable -->
+                  <span class="method-name">verifyDynamicTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPaginationTable">
+                  </a> <!-- verifyPaginationTable -->
+                  <span class="method-name">verifyPaginationTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyStaticTable">
+                  </a> <!-- verifyStaticTable -->
+                  <span class="method-name">verifyStaticTable</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-passed -->
+          <div class="suite-AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.FormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyColorSelection">
+                  </a> <!-- verifyColorSelection -->
+                  <span class="method-name">verifyColorSelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyCountrySelection">
+                  </a> <!-- verifyCountrySelection -->
+                  <span class="method-name">verifyCountrySelection</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDatePicker1">
+                  </a> <!-- verifyDatePicker1 -->
+                  <span class="method-name">verifyDatePicker1</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDatePicker2">
+                  </a> <!-- verifyDatePicker2 -->
+                  <span class="method-name">verifyDatePicker2</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyDateRange">
+                  </a> <!-- verifyDateRange -->
+                  <span class="method-name">verifyDateRange</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyForm(Rahul, rahul@test.com, 9.999999999E9, Delhi)">
+                  </a> <!-- verifyForm(Rahul, rahul@test.com, 9.999999999E9, Delhi) -->
+                  <span class="method-name">verifyForm</span>
+                  <span class="parameters">(Rahul,rahul@test.com,9.999999999E9,Delhi)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyForm(Aman, aman@test.com, 8.888888888E9, Mumbai)">
+                  </a> <!-- verifyForm(Aman, aman@test.com, 8.888888888E9, Mumbai) -->
+                  <span class="method-name">verifyForm</span>
+                  <span class="parameters">(Aman,aman@test.com,8.888888888E9,Mumbai)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-passed -->
+          <div class="suite-AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.WindowHandlingTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyNewTab">
+                  </a> <!-- verifyNewTab -->
+                  <span class="method-name">verifyNewTab</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyPopupWindow">
+                  </a> <!-- verifyPopupWindow -->
+                  <span class="method-name">verifyPopupWindow</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyWikipediaSearch">
+                  </a> <!-- verifyWikipediaSearch -->
+                  <span class="method-name">verifyWikipediaSearch</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-passed -->
+          <div class="suite-AutomationSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.UploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifyMultipleFileUpload">
+                  </a> <!-- verifyMultipleFileUpload -->
+                  <span class="method-name">verifyMultipleFileUpload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="verifySingleFileUpload">
+                  </a> <!-- verifySingleFileUpload -->
+                  <span class="method-name">verifySingleFileUpload</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AutomationSuite-class-passed -->
+        </div> <!-- panel AutomationSuite -->
+        <div panel-name="test-xml-AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ashus\Desktop\wipro_Sdet\Automation_Test\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;AutomationSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;listeners.TestListener&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;AutomationTests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.HomePageTest&quot;/&gt;
+      &lt;class name=&quot;tests.FormTest&quot;/&gt;
+      &lt;class name=&quot;tests.AlertTest&quot;/&gt;
+      &lt;class name=&quot;tests.LinksTest&quot;/&gt;
+      &lt;class name=&quot;tests.DynamicButtonTest&quot;/&gt;
+      &lt;class name=&quot;tests.MouseActionsTest&quot;/&gt;
+      &lt;class name=&quot;tests.SectionFormTest&quot;/&gt;
+      &lt;class name=&quot;tests.ShadowDOMTest&quot;/&gt;
+      &lt;class name=&quot;tests.TableTest&quot;/&gt;
+      &lt;class name=&quot;tests.UploadTest&quot;/&gt;
+      &lt;class name=&quot;tests.WindowHandlingTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- AutomationTests --&gt;
+&lt;/suite&gt; &lt;!-- AutomationSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">AutomationTests (11 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AutomationSuite');
+function tableData_AutomationSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(35);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'verifyLenovoLink')
+data.setCell(0, 2, 'tests.LinksTest')
+data.setCell(0, 3, 26782);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'verifyConfirmationAlert')
+data.setCell(1, 2, 'tests.AlertTest')
+data.setCell(1, 3, 8124);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'verifyMouseHover')
+data.setCell(2, 2, 'tests.MouseActionsTest')
+data.setCell(2, 3, 7610);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'verifySimpleAlert')
+data.setCell(3, 2, 'tests.AlertTest')
+data.setCell(3, 3, 7302);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'clickBlogLinkTest')
+data.setCell(4, 2, 'tests.ShadowDOMTest')
+data.setCell(4, 3, 6742);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'verifyWikipediaSearch')
+data.setCell(5, 2, 'tests.WindowHandlingTest')
+data.setCell(5, 3, 6415);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'verifyPromptAlert')
+data.setCell(6, 2, 'tests.AlertTest')
+data.setCell(6, 3, 6257);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'verifySlider')
+data.setCell(7, 2, 'tests.MouseActionsTest')
+data.setCell(7, 3, 4442);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'verifyDragAndDrop')
+data.setCell(8, 2, 'tests.MouseActionsTest')
+data.setCell(8, 3, 4363);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'verifyDoubleClick')
+data.setCell(9, 2, 'tests.MouseActionsTest')
+data.setCell(9, 3, 4293);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'verifyDynamicButton')
+data.setCell(10, 2, 'tests.DynamicButtonTest')
+data.setCell(10, 3, 4179);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'verifyColorSelection')
+data.setCell(11, 2, 'tests.FormTest')
+data.setCell(11, 3, 3721);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'verifyScrollingDropdown')
+data.setCell(12, 2, 'tests.MouseActionsTest')
+data.setCell(12, 3, 3566);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'verifySingleFileUpload')
+data.setCell(13, 2, 'tests.UploadTest')
+data.setCell(13, 3, 3533);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'verifyAppleLink')
+data.setCell(14, 2, 'tests.LinksTest')
+data.setCell(14, 3, 3450);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'verifyDateRange')
+data.setCell(15, 2, 'tests.FormTest')
+data.setCell(15, 3, 3409);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'verifySectionForm')
+data.setCell(16, 2, 'tests.SectionFormTest')
+data.setCell(16, 3, 3301);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'verifyDellLink')
+data.setCell(17, 2, 'tests.LinksTest')
+data.setCell(17, 3, 3255);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'verifyPopupWindow')
+data.setCell(18, 2, 'tests.WindowHandlingTest')
+data.setCell(18, 3, 2409);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'shadowCheckboxTest')
+data.setCell(19, 2, 'tests.ShadowDOMTest')
+data.setCell(19, 3, 2213);
+data.setCell(20, 0, 20)
+data.setCell(20, 1, 'shadowTextBoxTest')
+data.setCell(20, 2, 'tests.ShadowDOMTest')
+data.setCell(20, 3, 2204);
+data.setCell(21, 0, 21)
+data.setCell(21, 1, 'verifyNewTab')
+data.setCell(21, 2, 'tests.WindowHandlingTest')
+data.setCell(21, 3, 2198);
+data.setCell(22, 0, 22)
+data.setCell(22, 1, 'shadowFileUploadTest')
+data.setCell(22, 2, 'tests.ShadowDOMTest')
+data.setCell(22, 3, 2164);
+data.setCell(23, 0, 23)
+data.setCell(23, 1, 'verifyForm')
+data.setCell(23, 2, 'tests.FormTest')
+data.setCell(23, 3, 454);
+data.setCell(24, 0, 24)
+data.setCell(24, 1, 'verifyForm')
+data.setCell(24, 2, 'tests.FormTest')
+data.setCell(24, 3, 432);
+data.setCell(25, 0, 25)
+data.setCell(25, 1, 'verifyCountrySelection')
+data.setCell(25, 2, 'tests.FormTest')
+data.setCell(25, 3, 388);
+data.setCell(26, 0, 26)
+data.setCell(26, 1, 'verifyMultipleFileUpload')
+data.setCell(26, 2, 'tests.UploadTest')
+data.setCell(26, 3, 270);
+data.setCell(27, 0, 27)
+data.setCell(27, 1, 'verifyPaginationTable')
+data.setCell(27, 2, 'tests.TableTest')
+data.setCell(27, 3, 254);
+data.setCell(28, 0, 28)
+data.setCell(28, 1, 'verifySectionForm')
+data.setCell(28, 2, 'tests.SectionFormTest')
+data.setCell(28, 3, 200);
+data.setCell(29, 0, 29)
+data.setCell(29, 1, 'verifySectionForm')
+data.setCell(29, 2, 'tests.SectionFormTest')
+data.setCell(29, 3, 191);
+data.setCell(30, 0, 30)
+data.setCell(30, 1, 'verifyDatePicker1')
+data.setCell(30, 2, 'tests.FormTest')
+data.setCell(30, 3, 167);
+data.setCell(31, 0, 31)
+data.setCell(31, 1, 'verifyDynamicTable')
+data.setCell(31, 2, 'tests.TableTest')
+data.setCell(31, 3, 100);
+data.setCell(32, 0, 32)
+data.setCell(32, 1, 'verifyStaticTable')
+data.setCell(32, 2, 'tests.TableTest')
+data.setCell(32, 3, 59);
+data.setCell(33, 0, 33)
+data.setCell(33, 1, 'verifyHomePage')
+data.setCell(33, 2, 'tests.HomePageTest')
+data.setCell(33, 3, 43);
+data.setCell(34, 0, 34)
+data.setCell(34, 1, 'verifyDatePicker2')
+data.setCell(34, 2, 'tests.FormTest')
+data.setCell(34, 3, 41);
+window.suiteTableData['AutomationSuite']= { tableData: data, tableDiv: 'times-div-AutomationSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 2 minutes</span>
+              <div id="times-div-AutomationSuite">
+              </div> <!-- times-div-AutomationSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.HomePageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyHomePage</span>
+                <span class="method-start">10282 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">10332 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FormTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">11389 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyForm(Rahul, rahul@test.com, 9.999999999E9, Delhi)</span>
+                <span class="method-start">18284 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">18718 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">19021 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyForm(Aman, aman@test.com, 8.888888888E9, Mumbai)</span>
+                <span class="method-start">24304 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">24766 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">25039 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDatePicker1</span>
+                <span class="method-start">30060 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">30233 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">30532 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDatePicker2</span>
+                <span class="method-start">35509 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">35551 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">35775 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDateRange</span>
+                <span class="method-start">37415 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">40831 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">41080 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyCountrySelection</span>
+                <span class="method-start">46359 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">46749 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">46978 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyColorSelection</span>
+                <span class="method-start">48573 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">52295 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.AlertTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">52546 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySimpleAlert</span>
+                <span class="method-start">54316 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">61633 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">61902 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyConfirmationAlert</span>
+                <span class="method-start">63817 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">71954 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">72219 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPromptAlert</span>
+                <span class="method-start">77003 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">83265 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.LinksTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">83551 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyAppleLink</span>
+                <span class="method-start">89011 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">92475 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">92840 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDellLink</span>
+                <span class="method-start">98035 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">101298 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">102326 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyLenovoLink</span>
+                <span class="method-start">107505 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">134289 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DynamicButtonTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">134577 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDynamicButton</span>
+                <span class="method-start">139472 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">143651 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.MouseActionsTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">144351 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMouseHover</span>
+                <span class="method-start">147284 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">154898 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">155199 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDragAndDrop</span>
+                <span class="method-start">160143 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">164508 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">164772 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDoubleClick</span>
+                <span class="method-start">169517 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">173813 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">174115 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySlider</span>
+                <span class="method-start">180337 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">184782 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">185035 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyScrollingDropdown</span>
+                <span class="method-start">186595 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">190162 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.SectionFormTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">190434 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySectionForm(0, Rahul)</span>
+                <span class="method-start">195468 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">195660 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">195935 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">verifySectionForm(1, Aman)</span>
+                <span class="method-start">197640 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">201199 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">201442 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySectionForm(2, Karan)</span>
+                <span class="method-start">206682 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">206891 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.ShadowDOMTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">207095 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shadowTextBoxTest</span>
+                <span class="method-start">211934 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">214139 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">214386 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shadowCheckboxTest</span>
+                <span class="method-start">220567 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">222781 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">223027 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">shadowFileUploadTest</span>
+                <span class="method-start">228140 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">230305 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">230562 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">clickBlogLinkTest</span>
+                <span class="method-start">236539 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">243294 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.TableTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">243756 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyDynamicTable</span>
+                <span class="method-start">249320 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">249420 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">249743 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPaginationTable</span>
+                <span class="method-start">255033 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">255303 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">255651 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyStaticTable</span>
+                <span class="method-start">260810 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">260873 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.UploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">261150 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifySingleFileUpload</span>
+                <span class="method-start">263046 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">266584 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">267570 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyMultipleFileUpload</span>
+                <span class="method-start">272649 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">272921 ms</span>
+              </div> <!-- configuration-method after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.WindowHandlingTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">273246 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyWikipediaSearch</span>
+                <span class="method-start">278470 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">284889 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">285259 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyNewTab</span>
+                <span class="method-start">290980 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">293186 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">293632 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">verifyPopupWindow</span>
+                <span class="method-start">299572 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">tearDown</span>
+                <span class="method-start">301991 ms</span>
+              </div> <!-- configuration-method after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>
