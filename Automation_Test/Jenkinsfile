@@ -1,0 +1,60 @@
+pipeline {
+    agent any
+
+    tools {
+        maven 'Maven3'
+        jdk 'jdk21'
+    }
+
+    stages {
+
+        stage('Checkout') {
+            steps {
+                git branch: 'main',
+                    url: 'https://github.com/rajputRahulsingh/Capstone-Project-Wipro.git'
+            }
+        }
+
+        stage('Build') {
+            steps {
+                dir('Automation_Test') {
+                    bat 'mvn clean'
+                }
+            }
+        }
+
+        stage('Compile') {
+            steps {
+                dir('Automation_Test') {
+                    bat 'mvn compile'
+                }
+            }
+        }
+
+        stage('Test') {
+            steps {
+                dir('Automation_Test') {
+                    bat 'mvn test'
+                }
+            }
+        }
+
+        stage('Package') {
+            steps {
+                dir('Automation_Test') {
+                    bat 'mvn package'
+                }
+            }
+        }
+    }
+
+    post {
+        success {
+            echo 'Build Successful'
+        }
+
+        failure {
+            echo 'Build Failed'
+        }
+    }
+}
