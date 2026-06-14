@@ -12,7 +12,7 @@ public class TestDataProvider {
 
         String path =
 
-        "C:\\Users\\ashus\\Desktop\\wipro_Sdet\\Automation_Test\\src\\main\\resources\\testData.xlsx";
+        "C:\\Users\\ashus\\Desktop\\wipro_Sdet\\testData.xlsx";
 
         return ExcelUtil.getExcelData( path,"Sheet1");
     }
